@@ -11,10 +11,14 @@ class Surgery {
 
     static hasMany = [nurses:Nurse, patients:Patient, doctors:Doctor, appointments:Appointment, receptionists:Receptionist]
 
+    String toString(){
+        return name;
+    }
+
     static constraints = {
         name blank:false
         address blank:false
-        postcode maxSize:7, minSize:7
+        postcode maxSize:7
         telephone blank:false
         numberOfPatients blank:false
         description blank:false

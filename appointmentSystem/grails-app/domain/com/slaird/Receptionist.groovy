@@ -5,16 +5,20 @@ class Receptionist {
     String recepEmail
     String recepUsername
     String recepPassword
-    int recepPhone
+    String recepPhone
 
     static  belongsTo = [surgery:Surgery]
+
+    String toString(){
+        return recepName;
+    }
 
     static constraints = {
         recepName blank:false
         recepEmail blank:false, email:true
         recepUsername blank:false, unique:true
         recepPassword blank:false
-        recepPhone size:11, blank:false
+        recepPhone blank:false
 
     }
 }
