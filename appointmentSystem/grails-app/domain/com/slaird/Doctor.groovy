@@ -7,8 +7,15 @@ class Doctor {
     String doctorEmail
     String password
     String doctorOffice
-    Int doctorPhone
+    String doctorPhone
     String bio
+
+    static hasMany = [patients:Patient, nurses:Nurse, appointments:Appointment]
+    static belongsTo = [surgery:Surgery]
+    
+    String toString(){
+        return fullName;
+    }
 
     static constraints = {
         fullName blank:false
@@ -17,7 +24,7 @@ class Doctor {
         doctorEmail email:true
         password blank:false
         doctorOffice blank:false
-        doctorPhone size:11
+        doctorPhone maxSize:11, blank:false
         bio blank:false
     }
 }

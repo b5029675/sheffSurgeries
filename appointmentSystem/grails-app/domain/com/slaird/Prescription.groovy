@@ -2,11 +2,13 @@ package com.slaird
 
 class Prescription {
     String pharmacyName
-    Int prescripNumber
+    int prescripNumber
     String medicine
     String totalCost
     String dateIssued
     String patientPaying
+
+    static belongsTo = [patient:Patient, doctor:Doctor]
 
     static constraints = {
         pharmacyName blank:false

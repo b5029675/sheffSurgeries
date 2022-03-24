@@ -3,9 +3,11 @@ package com.slaird
 class Appointment {
     Date appDate
     String appTime
-    Int appDuration
+    int appDuration
     String roomNumber
     
+    static belongsTo = [appointment:Appointment, surgery:Surgery, doctor:Doctor]
+
     static constraints = {
         appDate blank:false
         appTime blank:false

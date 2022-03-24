@@ -5,9 +5,21 @@ class Nurse {
     String qualifications
     String nurseEmail
     String nurseOffice
-    Int nursePhone
+    String nursePhone
+
+    static hasMany = [doctor:Doctor]
+    static belongsTo = [doctor:Doctor, surgery:Surgery]
+
+    String toString(){
+        return fullName;
+    }
+    
     static constraints = {
+        nurseName blank:false
+        qualifications blank:false
         nurseEmail email:true, blank:false
-        nursePhone size:11
+        nursePhone maxSize:11, blank:false
+        nurseOffice blank:false
+        
     }
 }
