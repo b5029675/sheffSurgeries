@@ -5,6 +5,7 @@ class Doctor {
     String qualification
     String position
     String doctorEmail
+    String username
     String password
     String doctorOffice
     String doctorPhone
@@ -21,6 +22,7 @@ class Doctor {
         fullName blank:false
         qualification blank:false
         position blank:false
+	username blank:false
         doctorEmail email:true
         password blank:false
         doctorOffice blank:false
