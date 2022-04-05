@@ -10,6 +10,10 @@ class Prescription {
 
     static belongsTo = [patient:Patient, doctor:Doctor]
 
+    String toString(){
+        return pharmacyName;
+    }
+
     static constraints = {
         pharmacyName blank:false
         prescripNumber blank:false

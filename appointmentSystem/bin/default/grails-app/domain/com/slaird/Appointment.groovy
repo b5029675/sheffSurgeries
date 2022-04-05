@@ -6,7 +6,11 @@ class Appointment {
     int appDuration
     String roomNumber
     
-    static belongsTo = [appointment:Appointment, surgery:Surgery, doctor:Doctor]
+    static belongsTo = [patient:Patient, surgery:Surgery, doctor:Doctor]
+
+    String toString(){
+        return appDate;
+    }
 
     static constraints = {
         appDate blank:false

@@ -18,10 +18,11 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark navbar-static-top" role="navigation">
     <div class="row">
- <asset:image src="SheffSurgeriesBanner.png"/>
-
+ <a href="/#"> <asset:image src="SheffSurgeriesBanner.png"/></a>
  </div>
 </nav>
+
+
 
 <g:layoutBody/>
 

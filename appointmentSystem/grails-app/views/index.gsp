@@ -6,6 +6,11 @@
 </head>
 <body>
 
+<div>
+<g:loginToggle/>
+<g:loginToggleRecep/>
+</div>
+
 <div id="content" role="main">
     <div class="container">
         <section class="row colset-2-its">

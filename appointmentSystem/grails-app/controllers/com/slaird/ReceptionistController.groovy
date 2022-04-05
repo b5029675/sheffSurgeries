@@ -7,6 +7,27 @@ class ReceptionistController {
 
     ReceptionistService receptionistService
 
+    def login() {
+
+    }
+
+    def validate() {  
+    def user2 = Receptionist.findByUsername(params.username)
+    if (user2 && user2.password == params.password){
+    session.user2 = user2
+    render view:'home'
+    }
+    else{
+    flash.message = "Invalid username and password."
+    render view:'login'
+    }
+    }
+
+    def logout = {
+    session.user2 = null
+    redirect(uri:'/')
+    }
+
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
     def index(Integer max) {

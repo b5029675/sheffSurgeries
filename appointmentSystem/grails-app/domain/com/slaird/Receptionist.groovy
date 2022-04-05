@@ -3,8 +3,8 @@ package com.slaird
 class Receptionist {
     String recepName
     String recepEmail
-    String recepUsername
-    String recepPassword
+    String username
+    String password
     String recepPhone
 
     static  belongsTo = [surgery:Surgery]
@@ -16,8 +16,8 @@ class Receptionist {
     static constraints = {
         recepName blank:false
         recepEmail blank:false, email:true
-        recepUsername blank:false, unique:true
-        recepPassword blank:false
+        username blank:false, unique:true
+        password blank:false
         recepPhone blank:false
 
     }
