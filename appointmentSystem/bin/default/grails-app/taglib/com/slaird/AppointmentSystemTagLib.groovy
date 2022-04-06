@@ -10,12 +10,12 @@ class AppointmentSystemTagLib {
             out << "Welcome ${session.user}."
             out << "</span><span style='float:right;margin-right:15px'>"
             out << "<a href='${createLink(controller:'Doctor', action:'logout')}'>"
-            out << "Logout </a></span>"
+            out << "Logout</a></span>"
         }
         else{
             out << "<span style='float:right;margin-right:10px'>"
             out << "<a href='${createLink(controller:'Doctor', action:'login')}'>"
-            out << "Login </a></span>"
+            out << "<button>Login</button></a></span>"
         }
         out << "</div><br/>"
     }
@@ -27,15 +27,13 @@ class AppointmentSystemTagLib {
             out << "Welcome ${session.user}."
             out << "</span><span style='float:right;margin-right:15px'>"
             out << "<a href='${createLink(controller:'Receptionist', action:'logout')}'>"
-            out << "Logout </a></span>"
+            out << "Logout</a></span>"
         }
         else{
             out << "<span style='float:right;margin-right:10px'>"
             out << "<a href='${createLink(controller:'Receptionist', action:'login')}'>"
-            out << "Login </a></span>"
+            out << "<button>Login</button></a></span>"
         }
         out << "</div><br/>"
     }
 }
-
-

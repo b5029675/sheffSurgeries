@@ -15,7 +15,7 @@
 				<h3>Prescription Creator</h3>
 				<p>lorem ipsum</p>
 				<button type="button" class="btn btn-success">
-				<g:link controller="Prescription" action="create">Add Nurse</g:link>
+				<g:link controller="Prescription" action="create">Add Prescription</g:link>
 				</button>
 			</div>
 	</div>

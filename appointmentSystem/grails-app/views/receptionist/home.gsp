@@ -12,6 +12,11 @@
 	<g:loginToggleRecep/>
 	</div>
 
+	<button type="button" class="btnbtn-success">
+		<g:link controller="patient" class ="link" action="advSearch">Search Patients</g:link>
+	</button>
+	
+
 	<div id="content" role="main">
 		<div class="row">
 

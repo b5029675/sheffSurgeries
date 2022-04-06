@@ -6,12 +6,20 @@
 </head>
 <body>
 
-<div>
-<g:loginToggle/>
-<g:loginToggleRecep/>
-</div>
 
 <div id="content" role="main">
+
+<div class="logincontainer">
+    <div class="logininner">
+            <g:loginToggle/>
+    </div>
+    <div class="logininner">
+            <g:loginToggleRecep/>
+    </div>
+</div>
+
+
+
     <div class="container">
         <section class="row colset-2-its">
             <h1>Sheffield Surgeries appointment application</h1>
