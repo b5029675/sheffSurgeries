@@ -593,4 +593,17 @@ img.grails-logo {
 .logincontainer{
     display: flex;
     justify-content: space-evenly;
+    padding-top: 15px;
 }
+.logbutton{
+    background-color:#1a5eb4;
+    transition-duration:0.4s;
+    color:white;
+    padding: 2px 2px;
+    width:150px;
+}
+.logbutton:hover{
+    background-color:white;
+    color:#1a5eb4;
+}
+/*css for login buttons

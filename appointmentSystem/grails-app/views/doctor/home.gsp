@@ -7,9 +7,27 @@
 
 </head>
 <body>
+
 	<div class="row">
 	<g:loginToggle/>
 	</div>
+
+	<button type="button" class="btnbtn-success">
+		<g:link controller="Prescription" class ="link" action="Search">Search Prescriptions</g:link>
+	</button>
+
+	<button type="button" class="btnbtn-success">
+		<g:link controller="Prescription" class ="link" action="Results">View Prescriptions</g:link>
+	</button>
+
+	<button type="button" class="btnbtn-success">
+		<g:link controller="Patient" class ="link" action="resultsPatients">View Patients</g:link>
+	</button>
+
+	<button type="button" class="btnbtn-success">
+		<g:link controller="Appointment" class ="link" action="resultsAppointments">View Appointments</g:link>
+	</button>
+
 	<div id="content" role="main">
 			<div class="fifth">
 				<h3>Prescription Creator</h3>

@@ -4,10 +4,11 @@
 	<meta name="layout" content="main"/>
 	<title>Receptionist Login</title>
 
-	<asset:link rel="icon" href="favicon.ico" type="image/x-ico"/>
+	<asset:stylesheet src="login.css"/>
 </head>
 <body>
 
+<div class='loginbox'>
 <p>Receptionist Login</p>
 
 	<g:if test="${flash.message}">
@@ -38,5 +39,6 @@
           </td></tr>
       </table>
     </g:form>
+    </div>
   </body>
 </html>

@@ -51,6 +51,15 @@
 				<g:link controller="Receptionist" action="create">Add Receptionist</g:link>
 				</button>
 			</div>
+
+			<div class="sixth">
+				<h3>Appointment</h3>
+				<p>lorem ipsum</p>
+				<button type="button" class="btn btn-success">
+				<g:link controller="Appointment" action="create">Add Appointment</g:link>
+				</button>
+			</div>
+
 		</div>
 	</body>
 </html

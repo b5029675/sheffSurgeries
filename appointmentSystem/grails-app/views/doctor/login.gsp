@@ -3,11 +3,11 @@
 <head>
 	<meta name="layout" content="main"/>
 	<title>Doctor Login</title>
-
-	<asset:link rel="icon" href="favicon.ico" type="image/x-ico"/>
+	<asset:stylesheet src="login.css"/>
 </head>
 <body>
 
+<div class='loginbox'>
 <p>Doctor Login</p>
 
 <g:if test="${flash.message}">
@@ -18,7 +18,7 @@
  <input type="hidden" name="cName" value="${cName}">
  <input type="hidden" name="aName" value="${aName}">
 
-      <table>
+      <table class='logintable'>
         <tr class="prop">
           <td class="name">
             <label for="username">User Name:</label>
@@ -39,5 +39,6 @@
           </td></tr>
       </table>
     </g:form>
-  </body>
+</div>
+</body>
 </html>

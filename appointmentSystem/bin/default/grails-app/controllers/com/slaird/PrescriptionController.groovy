@@ -96,4 +96,26 @@ class PrescriptionController {
             '*'{ render status: NOT_FOUND }
         }
     }
+    def Search(){
+        render view:'Search'
+    }
+
+    def advResults(){
+        def prescriptionProps = Prescription.metaClass.properties*.name
+        def prescriptions = Prescription.withCriteria{
+            "${params.queryType}"{
+                    params.each { field, value ->
+                    if (prescriptionProps.grep(field) && value) {
+                    ilike(field, value)
+                    }
+                }
+            }
+        }
+        return [prescriptions:prescriptions]
+    }
+
+    def viewPrescription(){
+        def prescriptions = Prescription
+        return [prescriptions:prescriptions]
+    }
 }

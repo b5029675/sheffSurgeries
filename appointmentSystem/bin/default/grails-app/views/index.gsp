@@ -6,18 +6,16 @@
 </head>
 <body>
 
-
-<div id="content" role="main">
-
 <div class="logincontainer">
-    <div class="logininner1">
+    <div class="logininner">
             <g:loginToggle/>
     </div>
-    <div class="logininner2">
+    <div class="logininner">
             <g:loginToggleRecep/>
     </div>
 </div>
 
+<div id="content" role="main">
 
 
     <div class="container">

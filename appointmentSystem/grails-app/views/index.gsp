@@ -6,9 +6,6 @@
 </head>
 <body>
 
-
-<div id="content" role="main">
-
 <div class="logincontainer">
     <div class="logininner">
             <g:loginToggle/>
@@ -18,6 +15,7 @@
     </div>
 </div>
 
+<div id="content" role="main">
 
 
     <div class="container">

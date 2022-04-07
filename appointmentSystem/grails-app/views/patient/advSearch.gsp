@@ -10,7 +10,7 @@
 <div class="row">
 <h1>Sheffield Surgeries Appointment System</h1>
 <formset>
-<legend>Advanced Search for Students</legend>
+<legend>Advanced Search for Patients</legend>
 <table>
 <g:form action="advResults">
 <tr>
