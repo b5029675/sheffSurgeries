@@ -325,11 +325,13 @@ fieldset.embedded legend {
 .message {
     background: #f3f3ff;
     border: 1px solid #b2d1ff;
-    color: #006dba;
+    color: red;
     -moz-box-shadow: 0 0 0.25em #b2d1ff;
     -webkit-box-shadow: 0 0 0.25em #b2d1ff;
     box-shadow: 0 0 0.25em #b2d1ff;
+    padding: 0px 5px;
 }
+
 
 .errors {
     background: #fff3f3;
@@ -464,7 +466,7 @@ th.desc a {
 }
 
 th:hover, tr:hover {
-    background: #f5f5f5;
+    background: #0d52a8;
 }
 
 /* PAGINATION */
@@ -605,5 +607,36 @@ img.grails-logo {
 .logbutton:hover{
     background-color:white;
     color:#1a5eb4;
+}
+.indexbutton{
+    background-color:#f5f9ff;
+    transition-duration:0.4s;
+    padding: 2px 2px;
+    width:150px;
+    text-decoration: none!important;
+    font-size: 13px;
+    color: #1a5eb4;
+}
+.indexbutton:hover{
+    background-color:#1a5eb4;
+    color:#f5f9ff!important;
+}
+.please{
+    padding: 0px 0px;
+    text-align:center;
+    margin:auto;
+}
+.indexbutton a{
+    text-decoration: none!important;
+    color:#1a5eb4;
+}
+.indexbutton a:hover{
+    color: #f5f9ff;
+}
+.resultsbox{
+    padding:10px 10px;
+    width:30%;
+    margin:20px auto;
+    border:1px solid black;
 }
 /*css for login buttons

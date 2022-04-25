@@ -6,6 +6,9 @@
     border:1px solid black;
     color:white;
 }
+.loginbox:hover{
+
+}
 .logintable tr{
     margin-right:0;
     text-align:center;

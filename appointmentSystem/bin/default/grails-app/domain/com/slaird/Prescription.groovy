@@ -5,7 +5,7 @@ class Prescription {
     int prescripNumber
     String medicine
     String totalCost
-    String dateIssued
+    Date dateIssued
     String patientPaying
 
     static belongsTo = [patient:Patient, doctor:Doctor]
@@ -16,7 +16,7 @@ class Prescription {
 
     static constraints = {
         pharmacyName blank:false
-        prescripNumber blank:false
+        prescripNumber blank:false, unique:true
         medicine blank:false
         totalCost blank:false
         dateIssued blank:false

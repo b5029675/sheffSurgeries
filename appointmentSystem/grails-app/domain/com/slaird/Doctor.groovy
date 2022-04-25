@@ -8,11 +8,11 @@ class Doctor {
     String username
     String password
     String doctorOffice
-    String doctorPhone
+    double doctorPhone
     String bio
 
-    static hasMany = [patients:Patient, nurses:Nurse, appointments:Appointment]
-    static belongsTo = [surgery:Surgery]
+    static hasMany = [patients:Patient, nurses:Nurse, appointments:Appointment, surgerys:Surgery]
+    static belongsTo = [patients:Patient]
     
     String toString(){
         return fullName;
@@ -23,10 +23,11 @@ class Doctor {
         qualification blank:false
         position blank:false
 	    username blank:false
-        email email:true
         password blank:false
         doctorOffice blank:false
-        doctorPhone maxSize:11, blank:false
+        doctorPhone size:11, blank:false
         bio blank:false
+        email email:true
     }
 }
+

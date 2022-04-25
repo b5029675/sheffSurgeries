@@ -5,7 +5,7 @@ class Receptionist {
     String recepEmail
     String username
     String password
-    String recepPhone
+    double recepPhone
 
     static  belongsTo = [surgery:Surgery]
 
@@ -18,7 +18,7 @@ class Receptionist {
         recepEmail blank:false, email:true
         username blank:false, unique:true
         password blank:false
-        recepPhone blank:false
+        recepPhone blank:false, maxSize:11
 
     }
 }

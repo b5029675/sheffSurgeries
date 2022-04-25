@@ -113,9 +113,13 @@ class PrescriptionController {
         }
         return [prescriptions:prescriptions]
     }
-
-    def viewPrescription(){
-        def prescriptions = Prescription
-        return [prescriptions:prescriptions]
+    
+    def Results(){
+        def prescriptions=Prescription.where{
+        }.list()
+        return[prescriptions:prescriptions,
+        totalPrescriptions:Prescription.count()]
     }
+
 }
+

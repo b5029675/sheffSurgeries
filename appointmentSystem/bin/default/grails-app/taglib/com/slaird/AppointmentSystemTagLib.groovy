@@ -24,7 +24,7 @@ class AppointmentSystemTagLib {
         out << "<div style='margin: 0px 0 0px;'>"
         if (request.getSession(false) && session.user2){
             out << "<span style='float:left; margin-left: 0px'>"
-            out << "Welcome ${session.user}."
+            out << "Welcome ${session.user2}."
             out << "</span><span style='float:right;margin-right:0px'>"
             out << "<a href='${createLink(controller:'Receptionist', action:'logout')}'>"
             out << "<button class='logbutton'>Logout</button></a></span>"
@@ -36,4 +36,5 @@ class AppointmentSystemTagLib {
         }
         out << "</div><br/>"
     }
+
 }

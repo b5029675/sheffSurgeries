@@ -96,4 +96,10 @@ class AppointmentController {
             '*'{ render status: NOT_FOUND }
         }
     }
+        def ResultsAppointments(){
+        def appointments=Appointment.where{
+            }.list()
+            return[appointments:appointments,
+            totalAppointments:Appointment.count()]
+    }
 }

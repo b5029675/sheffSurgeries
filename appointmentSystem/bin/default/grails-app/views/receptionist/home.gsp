@@ -8,49 +8,48 @@
 </head>
 <body>
 
-	<div class="row">
+	<div class="row" style="padding:10px 20px">
 	<g:loginToggleRecep/>
 	</div>
 
-	<button type="button" class="btnbtn-success">
-		<g:link controller="patient" class ="link" action="advSearch">Search Patients</g:link>
-	</button>
-	
+	<div style="padding:10px 20px">
+		<h3>Search Patients</h3>
+		<g:link controller="patient" class ="link" action="advSearch"><button type="button" class="indexbutton">Search Patients</button></g:link>
+	</div>
 
 	<div id="content" role="main">
 		<div class="row">
 
-			<div class="second">
+			<div style="padding: 10px 20px">
 				<h3>Doctor</h3>
 				<p>lorem ipsum</p>
-				<button type="button" class="btn btn-success">
-				<g:link controller="Doctor" action="create">Add Doctor</g:link>
-				</button>
+				<g:link controller="Doctor" action="create"><button type="button" class="logbutton">Add Doctor</button></g:link>
 			</div>
 
-			<div class="third">
+			<div style="padding: 10px 20px">
 				<h3>Nurse</h3>
 				<p>lorem ipsum</p>
-				<button type="button" class="btn btn-success">
-				<g:link controller="Nurse" action="create">Add Nurse</g:link>
-				</button>
+				<g:link controller="Nurse" action="create"><button type="button" class="logbutton">Add Nurse</button></g:link>
 			</div>
 
-			<div class="fourth">
+			<div style="padding: 10px 20px">
 				<h3>Patient</h3>
 				<p>lorem ipsum</p>
-				<button type="button" class="btn btn-success">
-				<g:link controller="Patient" action="create">Add Patient</g:link>
-				</button>
+				<g:link controller="Patient" action="create"><button type="button" class="logbutton">Add Patient</button></g:link>
 			</div>
 
-			<div class="sixth">
+			<div style="padding: 10px 20px">
 				<h3>Receptionist</h3>
 				<p>lorem ipsum</p>
-				<button type="button" class="btn btn-success">
-				<g:link controller="Receptionist" action="create">Add Receptionist</g:link>
-				</button>
+				<g:link controller="Receptionist" action="create"><button type="button" class="logbutton">Add Receptionist</button></g:link>
 			</div>
+
+			<div style="padding: 10px 20px">
+				<h3>Appointment</h3>
+				<p>lorem ipsum</p>
+				<g:link controller="Appointment" action="create"><button type="button" class="logbutton">Add Appointment</button></g:link>
+			</div>
+
 		</div>
 	</body>
 </html

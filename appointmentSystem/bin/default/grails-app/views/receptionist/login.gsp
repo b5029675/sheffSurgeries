@@ -24,7 +24,7 @@
             <label for="username">User Name:</label>
           </td>
           <td class="value">
-            <input type="text" id="username" name="username" value="">
+            <input type="text" id="recepEmail" name="recepEmail" value="">
           </td></tr>
         <tr class="prop">
           <td class="name">

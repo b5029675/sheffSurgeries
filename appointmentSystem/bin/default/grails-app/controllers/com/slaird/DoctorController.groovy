@@ -10,7 +10,7 @@ class DoctorController {
     }
 
     def validate() {
-    def user = Doctor.findByUsername(params.username)
+    def user = Doctor.findByEmail(params.email)
     if (user && user.password == params.password){
     session.user = user
     render view:'home'

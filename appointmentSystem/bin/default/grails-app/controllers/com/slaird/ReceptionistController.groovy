@@ -12,7 +12,7 @@ class ReceptionistController {
     }
 
     def validate() {  
-    def user2 = Receptionist.findByUsername(params.username)
+    def user2 = Receptionist.findByRecepEmail(params.recepEmail)
     if (user2 && user2.password == params.password){
     session.user2 = user2
     render view:'home'

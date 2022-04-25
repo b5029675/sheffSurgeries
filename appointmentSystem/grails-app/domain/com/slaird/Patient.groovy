@@ -4,13 +4,12 @@ class Patient {
     String patientName
     String patientAddress
     String patientResidence
-    String patientDob
+    Date patientDob
     String patientID
-    String dateRegistered
-    String patientPhone
+    Date dateRegistered
+    double patientPhone
 
     static hasMany = [prescriptions:Prescription, doctor:Doctor, surgery:Surgery, appointments:Appointment]
-    static belongsTo = [doctor:Doctor, surgery:Surgery]
 
     String toString(){
         return patientName;

@@ -1,0 +1,11 @@
+.indexbutton{
+    background-color:#3e74b8;
+    transition-duration:0.4s;
+    color:white;
+    padding: 2px 2px;
+    width:150px;
+}
+.indexbutton:hover{
+    background-color:white;
+    color:#3e74b8;
+}

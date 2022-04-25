@@ -115,4 +115,11 @@ class PatientController {
         }
         return [patients:patients]
     }
+
+    def resultsPatients(){
+        def patients=Patient.where{
+        }.list()
+        return[patients:patients,
+        totalPatients:Patient.count()]
+    }
 }
