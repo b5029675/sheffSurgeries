@@ -12,7 +12,7 @@ class Doctor {
     String bio
 
     static hasMany = [patients:Patient, nurses:Nurse, appointments:Appointment, surgerys:Surgery]
-    static belongsTo = [patients:Patient]
+    static belongsTo = [patients:Patient, nurses:Nurse]
     
     String toString(){
         return fullName;
