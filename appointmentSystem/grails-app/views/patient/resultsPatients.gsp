@@ -16,7 +16,7 @@
 
 	<ul style="padding:20px">
 		<g:each var="patient" in="${patients}">
-		<li><g:link controller="prescription" action="show"
+		<li><g:link controller="patient" action="show"
 			id="${patient.id}">${patient.patientID}, 
 			${patient.patientName}, 
 			

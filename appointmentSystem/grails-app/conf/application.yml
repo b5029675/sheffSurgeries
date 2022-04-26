@@ -97,8 +97,8 @@ dataSource:
     pooled: true
     jmxExport: true
     driverClassName: com.mysql.jdbc.Driver
-    username: admin
-    password: 'password1!'
+    username: spencer
+    password: password
 
 environments:
     development:
